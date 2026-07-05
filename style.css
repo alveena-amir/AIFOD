@@ -1,0 +1,123 @@
+/*
+Theme Name: AIFOD Speakers Theme
+Version: 1.0
+*/
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.speaker-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    border: 1px solid #eee;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.speaker-portrait {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.speaker-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speaker-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.speaker-job {
+    color: #555;
+    margin: 5px 0;
+}
+
+.speaker-org {
+    color: #777;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Filter dropdown */
+.filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-container label {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.filter-container select {
+    padding: 10px 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.filter-container select:hover {
+    border-color: #0073aa;
+}
+
+.filter-container select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0,115,170,0.1);
+}
+
+/* Booking button */
+.booking-btn {
+    background: #0073aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.booking-btn:hover {
+    background: #005a87;
+}
+
+/* Modal styles */
+#booking-modal h2 {
+    color: #1a1a2e;
+}
+
+#booking-modal input:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0,115,170,0.1);
+}
